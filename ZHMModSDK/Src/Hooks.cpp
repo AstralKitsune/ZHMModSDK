@@ -142,12 +142,14 @@ PATTERN_HOOK(
     void(ZKeyboardWindows* th, bool a2)
 );
 
+/*
 PATTERN_RELATIVE_CALL_HOOK(
     "\xE8\x00\x00\x00\x00\x48\x8B\x8C\x24\xC0\x01\x00\x00",
     "x????xxxxxxxx",
     IPackageManager_SPartitionInfo_SPartitionInfo,
     void*(IPackageManager::SPartitionInfo* th, int32_t index, ZString partitionID, IPackageManager::EPartitionType type, int32_t patchLevel)
 );
+*/
 
 PATTERN_HOOK(
     "\x40\x55\x56\x48\x83\xEC\x00\x48\x8D\xB1\x20\x01\x00\x00",
