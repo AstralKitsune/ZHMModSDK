@@ -74,6 +74,10 @@ void DirectXTKRenderer::OnPresent(IDXGISwapChain3* p_SwapChain) {
         return;
     }
 
+    if (!Globals::RenderManager || !Globals::RenderManager->m_pDevice) {
+        return;
+    }
+
     const auto s_NextFrame = (++m_FrameCounter) % m_FrameContext.size();
     auto& s_FrameCtx = m_FrameContext[s_NextFrame];
 
