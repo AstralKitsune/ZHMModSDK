@@ -2524,7 +2524,7 @@ DEFINE_DETOUR_WITH_CONTEXT(
     bool bCaptureOnly
 ) {
     if (dsv && *dsv && m_DirectXTKRenderer && (*dsv)->m_pTexture && (*dsv)->m_pTexture->m_pResource) {
-        m_DirectXTKRenderer->SetDepthBuffer((*dsv)->m_pTexture->m_pResource);
+        //m_DirectXTKRenderer->SetDepthBuffer((*dsv)->m_pTexture->m_pResource);
     }
 
     return { HookAction::Continue() };
