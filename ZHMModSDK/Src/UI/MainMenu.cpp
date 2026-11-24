@@ -36,7 +36,7 @@ void MainMenu::Draw(bool p_HasFocus) {
     ImGui::PopFont();
 
     ImGui::AlignTextToFramePadding();
-    ImGui::Text("~ or ^ (under ESC) to toggle this menu");
+    //ImGui::Text("~ or ^ (under ESC) to toggle this menu");
 
     if (ImGui::Button(ICON_MD_TOKEN " MODS")) {
         ModSDK::GetInstance()->GetUIModSelector()->Show();
