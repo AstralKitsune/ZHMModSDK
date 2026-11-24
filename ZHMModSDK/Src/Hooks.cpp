@@ -268,6 +268,7 @@ PATTERN_VTABLE_HOOK(
     void(ZAspectEntityFactory* th, ZEntityType** pEntity, const SExternalReferences& externalRefs, uint8_t* unk0)
 );
 
+/*
 PATTERN_VTABLE_HOOK(
     "\x48\x8D\x05\x00\x00\x00\x00\x49\x89\x04\x24\x48\xB8",
     "xxx????xxxxxx",
@@ -275,6 +276,7 @@ PATTERN_VTABLE_HOOK(
     ZCppEntityFactory_ConfigureEntity,
     void(ZCppEntityFactory* th, ZEntityType** pEntity, const SExternalReferences& externalRefs, uint8_t* unk0)
 );
+*/
 
 PATTERN_VTABLE_HOOK(
     "\x48\x8D\x05\x00\x00\x00\x00\x49\x89\x06\x48\xB8\x00\x00\x00\x00\x00\x00\x00\x00\x49\x89\x46\x18",
